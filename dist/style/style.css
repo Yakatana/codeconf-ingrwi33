@@ -108,4 +108,39 @@ body {
   width: 50%;
   margin-top: -11.5rem;
   margin-inline-start: 12rem;
+}
+
+.person-info {
+  text-align: left;
+  margin-top: 20px; /* Ajustez selon vos besoins */
+  margin-inline-start: 37px;
+  margin-inline-end: 37px;
+  display: flex;
+  align-items: center;
+}
+
+.person-info__text {
+  margin-inline-start: 15px; /* Ajustez selon vos besoins */
+}
+
+.person-info__name {
+  font-family: "Museo";
+  font-weight: 400;
+  font-size: 24px;
+  color: #4B436A;
+  margin-bottom: -1rem;
+}
+
+.person-info__location {
+  font-family: "League Spartan Variable", sans-serif;
+  font-weight: 200;
+  font-size: 19px;
+  color: #4B436A;
+}
+
+.person-info__avatar {
+  width: 100px; /* Ajustez selon vos besoins */
+  height: 100px; /* Ajustez selon vos besoins */
+  border-radius: 50%;
+  margin-inline-start: auto;
 }/*# sourceMappingURL=style.css.map */

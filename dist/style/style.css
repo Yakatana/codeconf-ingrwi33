@@ -46,6 +46,7 @@ body {
   font-family: "Museo";
 }
 
+/* HEADER */
 .head {
   display: flex;
   justify-content: space-between;
@@ -65,6 +66,7 @@ body {
   margin-inline-end: 20px;
 }
 
+/* HERO-HEADER */
 .page-layout {
   text-align: left;
   position: relative;
@@ -87,7 +89,7 @@ body {
 
 .page-layout__pic {
   width: 45%;
-  margin-top: -2.6rem; /* Ajustez selon vos besoins */
+  margin-top: -2.6rem;
   position: absolute;
   top: -0.15rem;
   left: 8rem;
@@ -110,9 +112,10 @@ body {
   margin-inline-start: 12rem;
 }
 
+/* CARDS */
 .person-info {
   text-align: left;
-  margin-top: 20px; /* Ajustez selon vos besoins */
+  margin-top: 20px;
   margin-inline-start: 37px;
   margin-inline-end: 37px;
   display: flex;
@@ -120,7 +123,7 @@ body {
 }
 
 .person-info__text {
-  margin-inline-start: 15px; /* Ajustez selon vos besoins */
+  margin-inline-start: 15px;
 }
 
 .person-info__name {
@@ -139,8 +142,8 @@ body {
 }
 
 .person-info__avatar {
-  width: 100px; /* Ajustez selon vos besoins */
-  height: 100px; /* Ajustez selon vos besoins */
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin-inline-start: auto;
 }/*# sourceMappingURL=style.css.map */

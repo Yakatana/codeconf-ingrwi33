@@ -179,8 +179,125 @@ body {
   line-height: 29px;
   letter-spacing: -0.35px;
   text-align: center;
-  margin-bottom: 20px; /* Ajustez selon vos besoins */
+  margin-bottom: 20px;
   margin-inline-start: 2.5rem;
   margin-inline-end: 2.5rem;
   color: #161515;
+}
+
+/* FORM */
+.speaker-form {
+  max-width: 600px;
+  margin: 37px auto;
+  padding: 37px;
+  font-family: "Maven Pro";
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 50px;
+}
+.form-group:nth-last-child(3) {
+  margin-block-end: 3rem;
+}
+.form-group.short-details-group {
+  height: 8rem;
+  padding: 1rem;
+}
+.form-group textarea#shortDetails {
+  border: 1px solid transparent;
+  height: 100%;
+}
+.form-group label[for=shortDetails] {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  transition: 0.3s ease-out;
+}
+.form-group.focused label[for=shortDetails] {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  opacity: 1;
+}
+
+.form-group:nth-last-child(2) {
+  border: 1px solid rgba(22, 21, 21, 0.1960784314);
+}
+
+label {
+  position: absolute;
+  left: 10px;
+  color: #161515;
+  pointer-events: none;
+  opacity: 0.8;
+  transition: 0.3s ease-out;
+}
+
+.form-group.focused label {
+  top: -24px;
+  left: 10px;
+  font-size: 16px;
+  opacity: 1;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 6px;
+  border: 1px solid transparent;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 6px;
+}
+
+hr {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  opacity: 0.4;
+}
+
+.form-group.focused label {
+  opacity: 0.5;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+label[for=keywords] .small-text {
+  font-size: 12px;
+}
+
+.form-group.short-details-group label[for=shortDetails] {
+  font-size: 14px;
+}
+
+.form-group.short-details-group.focused label[for=shortDetails] {
+  top: -24px;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.submit-button {
+  border: 1px solid #F74D1C;
+  background-color: transparent;
+  padding: 12px 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: "League Spartan Variable";
+  font-weight: 600;
+  font-size: 20px;
+  color: #F74D1C;
+}
+
+.submit-button:hover {
+  background-color: #F74D1C;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

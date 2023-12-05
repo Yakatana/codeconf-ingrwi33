@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style/style.min.css">
+  <script src="form.js"></script>
   <title>Speaker Edition 2023</title>
 </head>
 <body>
@@ -114,6 +115,39 @@
     <h2>BECOME SPEAKER</h2>
     <h3>Do you have a topic <br> that you like?</h3>
     <p>Submit it for the next event by filling out the <br> form below. Do not forget to specify the <br>subject and the related keywords.</p>
+
+    <form class="speaker-form">
+      <div class="form-group">
+        <input type="text" id="name" name="name" required>
+        <label for="name">Name*</label>
+        <hr>
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="email" name="email" required>
+        <label for="email">Mail*</label>
+        <hr>
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="subject" name="subject" required>
+        <label for="subject">Your Subject*</label>
+        <hr>
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="keywords" name="keywords" required>
+        <label for="keywords">Keywords* <span class="small-text">[separate by comma]</span></label>
+        <hr>
+      </div>
+
+      <div class="form-group short-details-group">
+        <textarea id="shortDetails" name="shortDetails" required></textarea>
+        <label for="shortDetails">Short details*</label>
+      </div>
+
+      <button type="submit" class="submit-button">SEND YOUR SUBJECT</button>
+    </form>
   </section>
 </body>
 </html>

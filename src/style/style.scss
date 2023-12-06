@@ -1,5 +1,6 @@
 @import "variables";
 @import "fonts";
+@import "footer";
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -137,6 +138,7 @@ body {
   text-align: center;
   padding-top: 4rem;
   background-color: white;
+  margin-block-end: 8rem;
 }
 
 .speaker-section h2 {

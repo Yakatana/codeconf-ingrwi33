@@ -35,6 +35,10 @@
   font-style: normal;
   font-display: swap;
 }
+footer {
+  background-color: #383838;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -158,6 +162,7 @@ body {
   text-align: center;
   padding-top: 4rem;
   background-color: white;
+  margin-block-end: 8rem;
 }
 
 .speaker-section h2 {

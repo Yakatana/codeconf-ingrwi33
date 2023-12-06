@@ -1,31 +1,42 @@
 footer {
   background-color: $light_grey;
   color: white;
-  padding: 36px;
 }
 
-h3, h4 {
+h3, h4, .speaker-span {
   color: $desert_footer;
 }
 
+.speaker-span {
+  display: block;
+}
+
+.helpdesk {
+  font-family: 'Maven Pro';
+  font-weight: 500;
+  line-height: 26px;
+}
+
 .footer__text {
-  border: 1px solid #000;
+  //border: 1px solid #000;
   margin-block-start: 2rem;
+  padding: $padding-marge;
 
   .address-span {
     font-family: 'Maven Pro';
-    font-weight: 700;
+    font-weight: 500;
     font-size: 15px;
-    border: 1px solid #000;
-    border-radius: 30rem;
   }
 
   .footer__address {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
+    border: 1px solid #FFF4;
+    border-radius: 30rem;
+    padding: 0.4rem 0;
   }
 
   .paragraph {
@@ -33,5 +44,56 @@ h3, h4 {
     font-weight: 400;
     font-size: 15px;
     line-height: 26px;
+  }
+}
+
+.footer {
+  &__logos {
+    //border: 1px solid #000;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+    justify-items: center;
+    align-items: center;
+    margin-block: 2rem;
+  }
+
+  &__socials {
+    //border: 1px solid #000;
+    padding: 36px;
+    font-weight: 300;
+
+    h4 {
+      margin-block: 0 1rem;
+    }
+  
+    p {
+      display: inline;
+      margin: 0.4rem;
+    }
+
+    span.icon-tw {
+      margin-left: 1.5rem; // Ajoutez cette ligne pour l'espace entre les icônes
+    }
+  }
+
+  &__text h3 {
+    padding-block-start: 10rem;
+  }
+}
+
+.line-container {
+  width: 100%;
+  border-top: 1px solid #FFF4;
+  border-bottom: 1px solid #FFF4;
+}
+
+.footer_copy {
+  border: 1px solid transparent;
+  padding: 0 36px;
+  padding-block: 1rem;
+
+  h4 {
+    margin-block-end: 0.6rem;
   }
 }

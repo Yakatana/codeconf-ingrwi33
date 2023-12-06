@@ -1,3 +1,37 @@
 footer {
   background-color: $light_grey;
+  color: white;
+  padding: 36px;
+}
+
+h3, h4 {
+  color: $desert_footer;
+}
+
+.footer__text {
+  border: 1px solid #000;
+  margin-block-start: 2rem;
+
+  .address-span {
+    font-family: 'Maven Pro';
+    font-weight: 700;
+    font-size: 15px;
+    border: 1px solid #000;
+    border-radius: 30rem;
+  }
+
+  .footer__address {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .paragraph {
+    font-family: 'Maven Pro';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+  }
 }

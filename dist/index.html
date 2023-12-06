@@ -16,15 +16,19 @@
     </div>
   </header>
 
-  <main class="page-layout">
-    <div class="background"></div>
-    <img class="page-layout__pic" src="./assets/images/page-picture/presents@2x.png" alt="Man speaking">
-    <h1 class="page-layout__title">Speaker <br> Edition 2023</h1>
-    <div class="overlay-images">
-      <img class="overlay-image-left" src="./assets/images/elts/pattern-stripes-left.png" alt="Overlay Left Image">
-      <img class="overlay-image-right" src="./assets/images/elts/pattern-stripes-right.png" alt="Overlay Right Image">
-    </div>
-
+  <main>
+    <section class="hero">
+    <picture class="hero__s-left">
+      <img src="./assets/images/elts/pattern-stripes-left.png" alt="Overlay Left Image">
+    </picture>
+      <picture class="hero__s-right">
+        <img src="./assets/images/elts/pattern-stripes-right.png" alt="Overlay Right Image">
+      </picture>
+    <picture class="hero__pic">
+      <img src="./assets/images/page-picture/presents@2x.png" alt="Man speaking">
+    </picture>
+    <h1 class="hero__title">Speaker <br> Edition 2023</h1>
+  </section>
 
     <div class="person-info">
       <div class="person-info__text">
@@ -157,7 +161,7 @@
     <form class="speaker-form">
       <div class="form-group">
         <input type="text" id="name" name="name" required>
-        <label for="name">Name*</label>
+        <label for="name">Name</label><span class="testing"></span>
         <hr>
       </div>
 
@@ -191,15 +195,17 @@
   </section>
 
   <footer>
-    <div>
+    <div class="footer__text">
       <h3>The Las Vegas Convention Center</h3>
-      <!--icone localisation--> <span>3150 Paradise Rd, Las Vegas, NV 89109</span>
-      <p>The Las Vegas Convention Center (LVCC), located adjacent to the Las Vegas Strip, encompasses 
+      <div class="footer__address">
+        <!--icone localisation--> <span class="icon icon-event"></span> <span class="address-span">3150 Paradise Rd, Las Vegas, NV 89109</span>
+      </div>
+      <p class="paragraph">The Las Vegas Convention Center (LVCC), located adjacent to the Las Vegas Strip, encompasses 
         approximately 3.2 million square feet with exhibit space of 2 million square feet and meeting 
         space of nearly 250,000 square feet. </p>
       <p>Helpdesk Call-center  +1 702-892-0711 <span>(speaker’s support)</span></p>
     </div>
-    <div class="footer_logos">
+    <div class="footer__logos">
       <a href="#" class="logo"><img src="./assets/images/logos/cisco.svg" alt="Cisco logo"></a>
       <a href="#" class="logo"><img src="./assets/images/logos/amazon_s3.svg" alt="Amazon logo"></a>
       <a href="#" class="logo"><img src="./assets/images/logos/nick.svg" alt="Nickelodeon logo"></a>

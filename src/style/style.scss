@@ -11,7 +11,6 @@ body {
   padding: 0;
   max-width: 100vw;
   font-family: 'Museo';
-  overflow-x: hidden;
   background-color: rgb(247, 247, 247);
   //border: 1px solid #000;
 }
@@ -49,46 +48,49 @@ body {
   position: relative;
 }
 
-.background {
+.hero {
   background: linear-gradient(to bottom, #583bb9, $main_color, #583bb9);
-  height: 176px;
   width: 100%;
-}
+  height: 11rem;
+  position: relative;
 
-.page-layout__title {
-  color: white;
-  font-size: 51px;
-  margin-top: 5px;
-  margin-inline-start: 37px;
-  position: absolute;
-  top: 45px;
-}
+  &__s-left {
+    position: absolute;
+    top: -0.75rem;
+    left: 0;
 
-.page-layout__pic {
-  //border: 1px solid #000;
-  width: 45%;
-  position: absolute;
-  top: -2.3rem;
-  left: 8rem;
-}
+    img {
+      height: 1.5rem;
+    }
+  }
+  &__s-right {
+    position: absolute;
+    top: -0.75rem;
+    right: 0;
 
-.overlay-images {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
+    img {
+      height: 1.5rem;
+    }
+  }
 
-.overlay-image-left {
-  width: 35%;
-  margin-top: -12rem;
-}
+  &__pic {
+    position: absolute;
+    bottom: -0.24rem;
+    left: 22%;
 
-.overlay-image-right {
-  width: 50%;
-  margin-top: -11.5rem;
-  margin-inline-start: 12rem;
-}
+    img {
+      height: 14rem;
+    }
+  }
 
+  &__title {
+    position: absolute;
+    top: 1.5rem;
+    color: white;
+    font-size: 3rem;
+    margin-inline: 2.5rem;
+  }
+}
 
 
 /* CARDS */
@@ -229,6 +231,10 @@ label {
   pointer-events: none;
   opacity: 0.8;
   transition: 0.3s ease-out;
+}
+
+.testing::after {
+  content: '';
 }
 
 .form-group.focused label {

@@ -30,11 +30,11 @@ body {
   &__nav {
     color: $light_black;
     //border: 1px solid purple;
-    img {
+    span {
       //border: 1px solid purple;
-      height: 1.6rem;
+      font-size: 1.4rem;
       &:first-child {
-        margin-inline-end: 20px;
+        margin-inline-end: 0.4rem;
       }
     }
   }
@@ -137,7 +137,6 @@ body {
 
 /* SPEAKER SECTION */
 .speaker-section {
-  text-align: center;
   padding-top: 4rem;
   background-color: white;
   margin-block-end: 8rem;
@@ -148,6 +147,7 @@ body {
   font-weight: 700;
   font-size: 35px;
   color: $main_color;
+  text-align: center;
 }
 
 .speaker-section h3 {
@@ -182,6 +182,7 @@ body {
   font-family: 'Maven Pro';
   font-weight: 400;
   font-size: 20px;
+  text-align: center;
 }
 
 .form-group {
@@ -233,8 +234,8 @@ label {
   transition: 0.3s ease-out;
 }
 
-.testing::after {
-  content: '';
+.required_star::after {
+  content: '*';
 }
 
 .form-group.focused label {

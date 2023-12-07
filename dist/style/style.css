@@ -196,7 +196,7 @@
   margin-left: 1.5rem;
 }
 .footer__text h3 {
-  padding-block-start: 10rem;
+  padding-block-start: 8rem;
 }
 
 .line-container {
@@ -360,7 +360,7 @@ body {
 .speaker-section {
   padding-top: 4rem;
   background-color: white;
-  margin-block-end: 8rem;
+  margin-block-end: -6rem;
 }
 
 .speaker-section h2 {
@@ -380,7 +380,7 @@ body {
   color: #353237;
 }
 
-.speaker-section p {
+.speaker-section__p {
   font-family: "Maven Pro", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -390,13 +390,12 @@ body {
   margin-bottom: 20px;
   margin-inline-start: 2.5rem;
   margin-inline-end: 2.5rem;
-  color: #353237;
 }
 
 /* FORM */
 .speaker-form {
   max-width: 600px;
-  margin: 37px auto;
+  margin-block-start: 37px;
   padding: 37px;
   font-family: "Maven Pro";
   font-weight: 400;
@@ -511,16 +510,42 @@ label[for=keywords] .small-text {
 }
 
 /* GET TICKET CTA */
+.ticket {
+  position: relative;
+  top: 0.5rem;
+  left: 0;
+}
 .ticket__cta {
-  background-color: red;
+  background-color: #F74D1C;
   border: none;
-  box-shadow: 0 0 0 1rem rgba(247, 77, 28, 0.5);
+  box-shadow: 0 0 0 1rem rgba(247, 77, 28, 0.2);
+  /*               0 0 1rem rgba($cta_color, 0.5); */
   border-radius: 30rem;
-  padding-inline: 0;
+  padding-inline: 2rem;
+  position: relative;
+  top: 1rem;
+  left: 7.5rem;
 }
 .ticket__cta p {
   font-family: "Maven Pro";
   font-weight: 700;
   font-size: 1.6rem;
   color: white;
+}
+.ticket__price {
+  border: 1px solid #000;
+  color: white;
+  background-color: #303030;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  font-family: "Maven Pro";
+  font-size: 0.9rem;
+  text-align: center;
+  position: relative;
+  top: 0.1rem;
+  left: 0;
+  margin-inline: 11rem;
+  padding-block: 0.4rem;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=style.css.map */

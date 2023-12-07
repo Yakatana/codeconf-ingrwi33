@@ -128,17 +128,17 @@
   content: "\e94f";
 }
 
-footer {
+.footer {
   background-color: #383838;
   color: white;
 }
-
-h3, h4, .speaker-span {
-  color: #DBC9B7;
+.footer h3, .footer h4 {
+  color: #4BE8D2;
 }
 
 .speaker-span {
   display: block;
+  color: #DBC9B7;
 }
 
 .helpdesk {
@@ -212,6 +212,7 @@ h3, h4, .speaker-span {
 }
 .footer_copy h4 {
   margin-block-end: 0.6rem;
+  color: #DBC9B7;
 }
 
 *, *::before, *::after {
@@ -237,7 +238,7 @@ body {
   max-height: 75px;
 }
 .head__nav {
-  color: #161515;
+  color: #353237;
 }
 .head__nav span {
   font-size: 1.4rem;
@@ -264,15 +265,17 @@ body {
   left: 0;
 }
 .hero__s-left img {
-  height: 1.5rem;
+  height: 2rem;
 }
 .hero__s-right {
   position: absolute;
   top: -0.75rem;
   right: 0;
+  overflow-x: hidden;
 }
 .hero__s-right img {
   height: 1.5rem;
+  transform: translateX(125px);
 }
 .hero__pic {
   position: absolute;
@@ -280,7 +283,7 @@ body {
   left: 22%;
 }
 .hero__pic img {
-  height: 14rem;
+  height: 15rem;
 }
 .hero__title {
   position: absolute;
@@ -288,6 +291,29 @@ body {
   color: white;
   font-size: 3rem;
   margin-inline: 2.5rem;
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+  margin-block-start: 3rem;
+  margin-inline: 3rem;
+  display: flex;
+  align-items: center;
+}
+.breadcrumb__text {
+  font-size: 1.2rem;
+  color: #4B436A;
+  margin-inline-start: 0.2rem;
+}
+.breadcrumb__line {
+  width: 3px;
+  height: 1.4rem;
+  background-color: #4B436A;
+  margin: 0 0.5rem;
+}
+.breadcrumb .icon-home {
+  color: #F74D1C;
+  font-size: 1.6rem;
 }
 
 /* CARDS */
@@ -351,7 +377,7 @@ body {
   font-size: 24px;
   text-align: center;
   margin-bottom: 20px;
-  color: #161515;
+  color: #353237;
 }
 
 .speaker-section p {
@@ -364,7 +390,7 @@ body {
   margin-bottom: 20px;
   margin-inline-start: 2.5rem;
   margin-inline-end: 2.5rem;
-  color: #161515;
+  color: #353237;
 }
 
 /* FORM */
@@ -413,7 +439,7 @@ body {
 label {
   position: absolute;
   left: 10px;
-  color: #161515;
+  color: #353237;
   pointer-events: none;
   opacity: 0.8;
   transition: 0.3s ease-out;
@@ -482,4 +508,19 @@ label[for=keywords] .small-text {
   font-weight: 600;
   font-size: 20px;
   color: #F74D1C;
+}
+
+/* GET TICKET CTA */
+.ticket__cta {
+  background-color: red;
+  border: none;
+  box-shadow: 0 0 0 1rem rgba(247, 77, 28, 0.5);
+  border-radius: 30rem;
+  padding-inline: 0;
+}
+.ticket__cta p {
+  font-family: "Maven Pro";
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

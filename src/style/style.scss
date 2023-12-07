@@ -60,16 +60,18 @@ body {
     left: 0;
 
     img {
-      height: 1.5rem;
+      height: 2rem;
     }
   }
   &__s-right {
     position: absolute;
     top: -0.75rem;
     right: 0;
+    overflow-x: hidden;
 
     img {
       height: 1.5rem;
+      transform: translateX(125px);
     }
   }
 
@@ -79,7 +81,7 @@ body {
     left: 22%;
 
     img {
-      height: 14rem;
+      height: 15rem;
     }
   }
 
@@ -91,6 +93,39 @@ body {
     margin-inline: 2.5rem;
   }
 }
+
+
+
+
+/* BREADCRUMB */
+.breadcrumb {
+  margin-block-start: 3rem;
+  margin-inline: 3rem;
+  display: flex;
+  align-items: center;
+
+  &__text {
+    font-size: 1.2rem;
+    color: $main_color_darker;
+    margin-inline-start: 0.2rem;
+  }
+
+  &__line {
+    width: 3px;
+    height: 1.4rem;
+    background-color:$main_color_darker;
+    margin: 0 0.5rem;
+  }
+
+  .icon-home {
+    color: $cta_color;
+    font-size: 1.6rem;
+  }
+}
+
+
+
+
 
 
 /* CARDS */
@@ -290,7 +325,7 @@ label[for="keywords"] .small-text {
 }
 
 .submit-button {
-  border: 1px solid $button_form;
+  border: 1px solid $cta_color;
   background-color: transparent;
   padding: 12px 40px;
   border-radius: 30px;
@@ -298,5 +333,24 @@ label[for="keywords"] .small-text {
   font-family: 'League Spartan Variable';
   font-weight: 600;
   font-size: 20px;
-  color: $button_form;
+  color: $cta_color;
+}
+
+/* GET TICKET CTA */
+
+.ticket {
+&__cta {
+  background-color: red;
+  border: none;
+  box-shadow: 0 0 0 1rem rgba($cta_color, $shadow_opacity);
+  border-radius: 30rem;
+  padding-inline: 0;
+
+    p {
+      font-family: 'Maven Pro';
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: white;
+    }
+  }
 }

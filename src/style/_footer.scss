@@ -1,14 +1,15 @@
-footer {
+.footer {
   background-color: $light_grey;
   color: white;
-}
 
-h3, h4, .speaker-span {
-  color: $desert_footer;
+  h3, h4 {
+    color: $blue_footer;
+  }
 }
 
 .speaker-span {
   display: block;
+  color: $desert_footer;
 }
 
 .helpdesk {
@@ -95,5 +96,6 @@ h3, h4, .speaker-span {
 
   h4 {
     margin-block-end: 0.6rem;
+    color: $desert_footer;
   }
 }

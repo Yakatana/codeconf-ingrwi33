@@ -217,44 +217,117 @@
   font-size: 1.6rem;
 }
 
-/* CARDS */
-.person-info {
-  text-align: left;
-  margin-top: 20px;
-  margin-inline-start: 37px;
-  margin-inline-end: 37px;
+.cards-container {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-block-start: 1.25rem;
+}
+
+/* CARDS BASE */
+.person-info {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  margin-block: 1.25rem;
+  margin-inline: 2.938rem;
 }
-
-.person-info__text {
-  margin-inline-start: 15px;
-}
-
 .person-info__name {
   font-family: "Museo";
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #4B436A;
   margin-bottom: -1rem;
 }
-
-.firstname {
+.person-info__name-firstname {
   display: block;
 }
-
 .person-info__location {
   font-family: "League Spartan Variable";
   font-weight: 200;
-  font-size: 19px;
+  font-size: 1.188rem;
   color: #4B436A;
 }
-
-.person-info__avatar {
-  width: 85px;
-  height: 85px;
+.person-info__avatar img {
+  width: 5.313rem;
+  height: 5.313rem;
   border-radius: 50%;
-  margin-inline-start: auto;
+}
+.person-info__offline {
+  display: none;
+}
+.person-info__details {
+  display: none;
+}
+
+/* ACTIVE */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.person-info-active {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 3rem;
+  margin-block-start: 1.25rem;
+}
+.person-info-active__name {
+  font-family: "Museo";
+  color: #4B436A;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: -1rem;
+}
+.person-info-active__name-firstname {
+  display: inline;
+}
+.person-info-active__location {
+  display: none;
+}
+.person-info-active__avatar {
+  display: none;
+}
+.person-info-active__offline {
+  display: flex;
+  flex-direction: column;
+  font-family: "League Spartan Variable";
+  color: #353237;
+}
+.person-info-active__offline-title {
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+.person-info-active__offline-text {
+  margin-block-start: -0.8rem;
+  font-weight: 450;
+  font-size: 1.3rem;
+}
+.person-info-active__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.person-info-active__details-time {
+  font-family: "Maven Pro";
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #353237;
+}
+.person-info-active__details-time .icon {
+  margin-inline-end: 0.6rem;
+}
+.person-info-active__details-cta {
+  font-family: "League Spartan Variable";
+  font-weight: 600;
+  color: #F74D1C;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #F74D1C;
+  border-radius: 20rem;
+  padding: 0.6rem 1.5rem 0.6rem 6rem;
 }
 
 /* SPEAKER SECTION */

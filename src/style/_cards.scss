@@ -10,8 +10,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-block: 1.25rem;
-  margin-inline: 2.938rem;
 
   &__name {
     font-family: 'Museo';
@@ -19,10 +17,11 @@
     font-size: 1.5rem;
     color: $main_color_darker;
     margin-bottom: -1rem;
-  }
+    margin-inline: 2.938rem;
 
-  &__name-firstname {
-    display: block;
+    &-firstname {
+      display: block;
+    }
   }
 
   &__location {
@@ -30,6 +29,7 @@
     font-weight: 200;
     font-size: 1.188rem;
     color: $main_color_darker;
+    margin-inline: 2.938rem;
   }
 
   &__avatar {
@@ -37,6 +37,7 @@
       width: 5.313rem;
       height: 5.313rem;
       border-radius: 50%;
+      margin-inline-end: 2.938rem;
     }
   }
 
@@ -61,8 +62,8 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 3rem;
-  margin-block-start: 1.25rem;
+  gap: 2rem;
+  background-color: $cards_bg;
 
   &__name {
     font-family: 'Museo';
@@ -70,10 +71,11 @@
     font-weight: 400;
     font-size: 1.5rem;
     margin-bottom: -1rem;
-  }
+    border: 1px solid #000;
 
-  &__name-firstname {
-    display: inline;
+    &-firstname {
+      display: block;
+    }
   }
 
   &__location {
@@ -89,6 +91,7 @@
     flex-direction: column;
     font-family: 'League Spartan Variable';
     color: $light_black;
+    margin-inline: 2.938rem;
 
     &-title {
       font-weight: 500;
@@ -106,6 +109,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-inline: 2.938rem;
+    margin-block-end: 1.4rem;
 
     &-time {
       font-family: 'Maven Pro';

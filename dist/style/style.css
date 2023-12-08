@@ -229,8 +229,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-block: 1.25rem;
-  margin-inline: 2.938rem;
 }
 .person-info__name {
   font-family: "Museo";
@@ -238,6 +236,7 @@
   font-size: 1.5rem;
   color: #4B436A;
   margin-bottom: -1rem;
+  margin-inline: 2.938rem;
 }
 .person-info__name-firstname {
   display: block;
@@ -247,11 +246,13 @@
   font-weight: 200;
   font-size: 1.188rem;
   color: #4B436A;
+  margin-inline: 2.938rem;
 }
 .person-info__avatar img {
   width: 5.313rem;
   height: 5.313rem;
   border-radius: 50%;
+  margin-inline-end: 2.938rem;
 }
 .person-info__offline {
   display: none;
@@ -271,8 +272,8 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 3rem;
-  margin-block-start: 1.25rem;
+  gap: 2rem;
+  background-color: #FFEFE6;
 }
 .person-info-active__name {
   font-family: "Museo";
@@ -280,9 +281,10 @@
   font-weight: 400;
   font-size: 1.5rem;
   margin-bottom: -1rem;
+  border: 1px solid #000;
 }
 .person-info-active__name-firstname {
-  display: inline;
+  display: block;
 }
 .person-info-active__location {
   display: none;
@@ -295,6 +297,7 @@
   flex-direction: column;
   font-family: "League Spartan Variable";
   color: #353237;
+  margin-inline: 2.938rem;
 }
 .person-info-active__offline-title {
   font-weight: 500;
@@ -309,6 +312,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-inline: 2.938rem;
+  margin-block-end: 1.4rem;
 }
 .person-info-active__details-time {
   font-family: "Maven Pro";

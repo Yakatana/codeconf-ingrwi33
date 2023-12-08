@@ -27,7 +27,7 @@ cards.forEach((card) => {
     let names = this.querySelectorAll('.person-info__name');
     if (names) {
       names.forEach((name) => {
-        name.classList.toggle('person-info-active__name');
+        name.classList.toggle('person-info__name-active');
       });
     }
 

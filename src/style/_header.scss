@@ -1,0 +1,99 @@
+/* HEADER */
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 21px 40px 21px;
+  &__logo {
+    max-height: 75px;
+  }
+  &__nav {
+    color: $light_black;
+    span {
+      font-size: 1.4rem;
+      &:first-child {
+        margin-inline-end: 0.4rem;
+      }
+    }
+  }
+}
+
+
+/* HERO-HEADER */
+.page-layout {
+  text-align: left;
+  position: relative;
+}
+
+.hero {
+  background: linear-gradient(to bottom, #583bb9, $main_color, #583bb9);
+  width: 100%;
+  height: 11rem;
+  position: relative;
+
+  &__stripes_left {
+    position: absolute;
+    top: -0.75rem;
+    left: 0;
+
+    img {
+      height: 2rem;
+    }
+  }
+  &__stripes_right {
+    position: absolute;
+    top: -0.75rem;
+    right: 0;
+    overflow-x: hidden;
+
+    img {
+      height: 1.5rem;
+      transform: translateX(125px);
+    }
+  }
+
+  &__pic {
+    position: absolute;
+    bottom: -0.24rem;
+    left: 22%;
+
+    img {
+      height: 15rem;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 1.5rem;
+    color: white;
+    font-size: 3rem;
+    margin-inline: 2.5rem;
+  }
+}
+
+
+/* BREADCRUMB */
+.breadcrumb {
+  margin-block-start: 3rem;
+  margin-inline: 3rem;
+  display: flex;
+  align-items: center;
+
+  &__text {
+    font-size: 1.2rem;
+    color: $main_color_darker;
+    margin-inline-start: 0.2rem;
+  }
+
+  &__line {
+    width: 3px;
+    height: 1.4rem;
+    background-color:$main_color_darker;
+    margin: 0 0.5rem;
+  }
+
+  .icon-home {
+    color: $cta_color;
+    font-size: 1.6rem;
+  }
+}

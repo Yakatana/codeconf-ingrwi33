@@ -1,0 +1,39 @@
+/* CARDS */
+.person-info {
+  text-align: left;
+  margin-top: 20px;
+  margin-inline-start: 37px;
+  margin-inline-end: 37px;
+  display: flex;
+  align-items: center;
+}
+
+.person-info__text {
+  margin-inline-start: 15px;
+}
+
+.person-info__name {
+  font-family: 'Museo';
+  font-weight: 400;
+  font-size: 24px;
+  color: $main_color_darker;
+  margin-bottom: -1rem;
+}
+
+.firstname {
+  display: block;
+}
+
+.person-info__location {
+  font-family: 'League Spartan Variable';
+  font-weight: 200;
+  font-size: 19px;
+  color: $main_color_darker;
+}
+
+.person-info__avatar {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  margin-inline-start: auto;
+}

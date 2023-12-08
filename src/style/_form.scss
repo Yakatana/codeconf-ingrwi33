@@ -1,0 +1,225 @@
+/* SPEAKER SECTION */
+.contact {
+  padding-top: 4rem;
+  background-color: white;
+  margin-block-end: -6rem;
+
+  &__title2 {
+    font-family: 'League Spartan Variable';
+    font-weight: 700;
+    font-size: 35px;
+    color: $main_color;
+    text-align: center;
+  }
+
+  &__title3 {
+    font-family: 'Museo', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: $light_black;
+  }
+
+  &__text {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: -0.35px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-inline-start: 2.5rem;
+    margin-inline-end: 2.5rem;
+  }
+}
+
+
+/* FORM */
+.contact__fill {
+  max-width: 600px;
+  margin-block-start: 37px;
+  padding: 37px;
+  font-family: 'Maven Pro';
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.fill {
+  &__group {
+    //border: 1px solid #000;
+    position: relative;
+    margin-bottom: 50px;
+  
+    &:nth-last-child(3) {
+      margin-block-end: 3rem;
+    }
+  
+    textarea#shortDetails {
+      border: 1px solid transparent;
+      height: 100%;
+    }
+  
+    label[for="shortDetails"] {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      transition: 0.3s ease-out;
+      //border: 1px solid purple;
+    }
+  
+    &.focused label[for="shortDetails"] {
+      top: -10px;
+      left: 10px;
+      font-size: 12px;
+      opacity: 1;
+    }
+
+    &.focused label {
+      top: -24px;
+      left: 10px;
+      font-size: 16px;
+      opacity: 1;
+    }
+  }
+}
+
+.shortdetails_group {
+  height: 8rem;
+  padding: 1rem;
+  border: 1px solid rgb($light_black, 0.3);
+  font-size: 1rem;
+  
+  &.focused {
+    label {
+      top: -24px;
+      left: 10px;
+      font-size: 16px;
+      opacity: 1;
+    }
+  }
+
+  textarea:focus + label,
+  textarea:valid + label {
+    top: -24px;
+    left: 10px;
+    font-size: 16px;
+    opacity: 0.6;
+  }
+}
+
+label {
+  position: absolute;
+  left: 10px;
+  color: $light-black;
+  pointer-events: none;
+  opacity: 0.8;
+  transition: 0.3s ease-out;
+}
+
+.required_star::after {
+  content: '*';
+}
+
+.fill__group.focused label {
+  top: -24px;
+  left: 10px;
+  font-size: 16px;
+  opacity: 1;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 6px;
+  border: 1px solid transparent;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid blue;
+}
+
+hr {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  opacity: 0.4
+}
+
+.fill__group.focused {
+  label {
+    opacity: 0.5;
+  }
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+label[for="keywords"] .small-text {
+  font-size: 12px;
+}
+
+.submit-button {
+  border: 1px solid $cta_color;
+  background-color: transparent;
+  padding: 12px 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'League Spartan Variable';
+  font-weight: 600;
+  font-size: 20px;
+  color: $cta_color;
+}
+
+
+/* GET TICKET CTA */
+
+.ticket {
+  &__cta {
+    background-color: $cta_color;
+    border: none;
+    box-shadow: 0 0 0 1rem rgba($cta_color, $shadow_opacity);
+    border-radius: 30rem;
+    padding-inline: 2rem;
+    
+    p {
+      font-family: 'Maven Pro';
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: white;
+    }
+
+    position: relative;
+    top: 1rem;
+    left: 7rem;
+  }
+
+  &__price {
+    border: 1px solid #000;
+    color: white;
+    background-color: darken($light_grey, 3%);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    font-family: 'Maven Pro';
+    font-size: 0.9rem;
+    text-align: center;
+    position: relative;
+    top: 0.2rem;
+    left: -0.2rem;
+    margin-inline: 11rem;
+    padding-block: 0.4rem;
+    border: none;
+    box-shadow: 0 0 10px rgba(black, $shadow_opacity);
+  }
+}
+
+.ticket {
+  position: relative;
+  top: 0.5rem;
+  left: 0;
+}

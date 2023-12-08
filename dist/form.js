@@ -1,17 +1,18 @@
+function addFocusClass(event) {
+  const group = event.target.closest('.fill__group');
+  group.classList.add('focused');
+}
+
+function removeFocusClass(event) {
+  const group = event.target.closest('.fill__group');
+  group.classList.remove('focused');
+}
+
 document.addEventListener('DOMContentLoaded', function () {
-  const formGroups = document.querySelectorAll('.form-group');
+  const inputs = document.querySelectorAll('.fill__group input');
 
-  formGroups.forEach(function (formGroup) {
-    const input = formGroup.querySelector('input, textarea');
-
-    input.addEventListener('focus', function () {
-      formGroup.classList.add('focused');
-    });
-
-    input.addEventListener('blur', function () {
-      if (!input.value) {
-        formGroup.classList.remove('focused');
-      }
-    });
+  inputs.forEach(function (input) {
+    input.addEventListener('focus', addFocusClass);
+    input.addEventListener('blur', removeFocusClass);
   });
 });
